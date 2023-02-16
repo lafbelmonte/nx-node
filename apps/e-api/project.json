@@ -11,7 +11,12 @@
         "outputPath": "dist/apps/e-api",
         "main": "apps/e-api/src/index.ts",
         "tsConfig": "apps/e-api/tsconfig.lib.json",
-        "assets": ["apps/e-api/*.md"]
+        "assets": ["apps/e-api/*.md"],
+        "transformers": [
+          { 
+            "name": "typescript-transform-paths/nx-transformer"
+          }
+        ]
       }
     },
     "lint": {

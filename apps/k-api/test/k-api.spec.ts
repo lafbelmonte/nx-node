@@ -1,7 +1,12 @@
-import { kApi } from '../src/lib/k-api';
+import request from 'supertest';
+import { Framework } from '@nx-node/types';
+import app from '../src/libs/app';
 
-describe('kApi', () => {
-  it('should work', () => {
-    expect(kApi()).toEqual('k-api');
+describe('GIVEN test', () => {
+  it('SHOULD test', async () => {
+    const response = await request(app.listen()).get('/').send();
+
+    expect(response.statusCode).toBe(200);
+    expect(response.text).toBe(`Welcome to ${Framework.Koa} API.`);
   });
 });

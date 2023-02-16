@@ -11,7 +11,12 @@
         "outputPath": "dist/apps/k-api",
         "main": "apps/k-api/src/index.ts",
         "tsConfig": "apps/k-api/tsconfig.lib.json",
-        "assets": ["apps/k-api/*.md"]
+        "assets": ["apps/k-api/*.md"],
+        "transformers": [
+          { 
+            "name": "typescript-transform-paths/nx-transformer"
+          }
+        ]
       }
     },
     "lint": {

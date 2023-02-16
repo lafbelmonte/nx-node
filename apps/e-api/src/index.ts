@@ -1,5 +1,5 @@
 import app from './libs/app';
-console.log('test121');
+
 const port = 3000;
 
 app.listen(port, () => {
