@@ -1,4 +1,4 @@
-import { eApi } from './e-api';
+import { eApi } from '../src/lib/e-api';
 
 describe('eApi', () => {
   it('should work', () => {

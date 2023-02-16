@@ -1,4 +1,4 @@
-import { kApi } from './k-api';
+import { kApi } from '../src/lib/k-api';
 
 describe('kApi', () => {
   it('should work', () => {
